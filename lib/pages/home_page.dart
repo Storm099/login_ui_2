@@ -151,7 +151,7 @@ class _HomePageState extends State<HomePage> {
                       const SizedBox(height: 30,),
                       //#facebook #google #apple
                       Container(
-                        margin: EdgeInsets.symmetric(horizontal: 30),
+                        margin: const EdgeInsets.only(left: 30,right: 30,bottom: 50),
                         child: Row(
                           children: [
                             Expanded(child: Container(
@@ -169,10 +169,10 @@ class _HomePageState extends State<HomePage> {
                               height: 45,
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(50),
-                                color: Colors.blue,
+                                color: Colors.red,
                               ),
                               child: const Center(
-                                child: Text("Google",style: TextStyle(color: Colors.red,fontWeight: FontWeight.bold),),
+                                child: Text("Google",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
                               ),
                             )),
                             const SizedBox(width: 15,),
@@ -180,12 +180,13 @@ class _HomePageState extends State<HomePage> {
                               height: 45,
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(50),
-                                color: Colors.blue,
+                                color: Colors.black,
                               ),
                               child: const Center(
-                                child: Text("Apple",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),),
+                                child: Text("Apple",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
                               ),
                             )),
+
                           ],
                         ),
                       )
